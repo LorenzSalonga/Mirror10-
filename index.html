@@ -8,7 +8,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@next/dist/css/splide.min.css">
     <script src="https://unpkg.com/@splidejs/splide@next"></script>
-
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-E9634TBWJK"></script>
 <script>
@@ -19,18 +18,14 @@
   gtag('config', 'G-E9634TBWJK');
 </script>
     <link rel="stylesheet" href="style.css">
-    
 </head>
-
 <style>
-  /* Additional custom styles */
   .article {
       
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
-
   .article-title {
       color: #4a5568;
   }
@@ -38,7 +33,6 @@
   .article-content {
       color: #4a5568;
   }
-
   .read-more-btn {
       background-color: #fbbf24;
       color: #ffffff;
@@ -48,7 +42,6 @@
       border-radius: 4px;
       text-decoration: none;
   }
-
   .read-more-btn:hover {
       background-color: #805ad5;
   }
@@ -64,316 +57,353 @@
     .carousel-item {
       min-width: 100%;
     }
+    .carousel-item {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .carousel-text {
+            position: absolute;
+            text-align: center;
+            color: black;
+            z-index: 10;
+        }
 </style>
-
-
 <body>
-  <section id="nav" class="bg-blue-900">
-    <nav class="nav">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="image/a.png" class="h-8" alt="Logo">
-          <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">THE MIRROR</span>
-        </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <!-- Placeholder for future content or buttons -->
-        </div>
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
-            <li>
-              <a href="index.html" class="block py-2 px-3 text-white rounded md:bg-transparent md:text-white-700 md:p-0 hover:text-yellow-500">HOME</a>
-            </li>
-            <li>
-              <a href="articles.html" class="block py-2 px-3 text-white rounded md:bg-transparent md:text-white-700 md:p-0 hover:text-yellow-500">ARTICLES</a>
-            </li>
-            <li>
-              <a href="announcement.html" class="block py-2 px-3 text-white rounded md:bg-transparent md:text-white-700 md:p-0 hover:text-yellow-500">ANNOUNCEMENT</a>
-            </li>
-            <li>
-              <a href="achivements.html" class="block py-2 px-3 text-white rounded md:bg-transparent md:text-white-700 md:p-0 hover:text-yellow-500">ACHIEVEMENTS</a>
-            </li>
-            <li>
-              <a href="aboutpage.html" class="block py-2 px-3 text-white rounded md:bg-transparent md:text-white-700 md:p-0 hover:text-yellow-500">ABOUT PAGE</a>
-            </li>
-          </ul> 
-        </div>
-      </div>
-    </nav>
-  </section>
-  
-
-<!--Background-->
-<div class="bg-cover bg-center" style="background-image: url('https://e0.pxfuel.com/wallpapers/299/677/desktop-wallpaper-for-your-phone-data-src-aesthetic-light-purple-background-tip-violet.jpg');">
+ <!--Incase na gusto palagyan ng background
+<div class="bg-cover bg-center" style="background-image: url('https://e0.pxfuel.com/wallpapers/299/677/desktop-wallpaper-for-your-phone-data-src-aesthetic-light-purple-background-tip-violet.jpg');"-->
 <!--Hero Section-->
-
+<div class="flex justify-center items-center h-full">
+  <p id="currentDate" class="text-lg text--600 font-semibold mt-2"></p>
+</div>
+<!--Carousel na nag sslide-->
 <section id="carousel">
-    <div id="default-carousel" class="w-full relative mt-3 px-16" data-carousel="slide">
-        <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96 w-full px-5 py-2 flex justify-between items-center">
+  <div id="default-carousel" class="w-full relative mt-3 px-16" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 overflow-hidden  md:h-96 w-full px-5 py-2 flex justify-between items-center">
           <!-- Item 1 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t39.30808-6/362920615_668484695312038_7090780689769762971_n.png?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeFN7gqtJoqu9qkktbPShNY9V3uBnBdKh5JXe4GcF0qHkiRU97ImsUhDgQtOwW6T1lZquq01XcMlJZhs4E7a1xXn&_nc_ohc=bz9iJrEGiQUQ7kNvgFpPWxF&_nc_ht=scontent.fmnl4-3.fna&oh=00_AYCy4vphrN2No5cGA7GdKSO0yEoPhMgaSrUEn_NFjrz36g&oe=669547FE"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <div class="hidden duration-700 ease-in-out carousel-item" data-carousel-item>
+              <img src="https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-6/309109961_466492918844551_5608857951586581210_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeGM2sxZ_hDB8YdKyHP287fiO3RrItf8iF47dGsi1_yIXve6rTBSRn1h8Yd2ynCAj6s-q-jdWfTNIhhPQoKf9wAw&_nc_ohc=nb8JDOvUmTQQ7kNvgEiMg86&_nc_ht=scontent.fmnl4-7.fna&oh=00_AYDmyppbptRHaDh-sfs4DsJTYHTTowyMUV87KuFSHH4APQ&oe=66954574" class="absolute block w-full h-full object-cover" alt="...">
+              <div class="carousel-text">
+                <h1 class="text-4xl font-bold"></h1>
+                <p class="mt-2"></p>
+              </div>
           </div>
           <!-- Item 2 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-6/309109961_466492918844551_5608857951586581210_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeGM2sxZ_hDB8YdKyHP287fiO3RrItf8iF47dGsi1_yIXve6rTBSRn1h8Yd2ynCAj6s-q-jdWfTNIhhPQoKf9wAw&_nc_ohc=nb8JDOvUmTQQ7kNvgEiMg86&_nc_ht=scontent.fmnl4-7.fna&oh=00_AYDmyppbptRHaDh-sfs4DsJTYHTTowyMUV87KuFSHH4APQ&oe=66954574"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <div class="hidden duration-700 ease-in-out carousel-item" data-carousel-item>
+              <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/434076701_808319177995255_8586662001961312094_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFQcuQy0bb-yDh-TzYmK0u1wL0jBVh40fTAvSMFWHjR9AQJwwuUyEMVR8QKzp8BaZECvg5jY5c8UMZFEmCkXc8P&_nc_ohc=jYuPQdDiyPUQ7kNvgEOH_JP&_nc_ht=scontent.fcrk1-3.fna&oh=00_AYCcyhvrsGWzD5NHGIYqjs5Qp5D3IOMnRxFz9RjPlaFFSQ&oe=669E811A" class="absolute block w-full h-full object-cover" alt="...">
+              <div class="carousel-text">
+                  <h1 class="text-4xl font-bold"></h1>
+                  <p class="mt-2"></p>
+              </div>
           </div>
           <!-- Item 3 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t39.30808-6/362920615_668484695312038_7090780689769762971_n.png?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeFN7gqtJoqu9qkktbPShNY9V3uBnBdKh5JXe4GcF0qHkiRU97ImsUhDgQtOwW6T1lZquq01XcMlJZhs4E7a1xXn&_nc_ohc=bz9iJrEGiQUQ7kNvgFpPWxF&_nc_ht=scontent.fmnl4-3.fna&oh=00_AYCy4vphrN2No5cGA7GdKSO0yEoPhMgaSrUEn_NFjrz36g&oe=669547FE"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <div class="hidden duration-700 ease-in-out carousel-item" data-carousel-item>
+              <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/441286528_839483401545499_5460269429252091425_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHJ2zf4Jj_c26GgZhQetVZ8jedxABcKM2aN53EAFwozZvvAAlNndW6ILYq1sDyF4-iYNROGfMln2vMe28iIW9xI&_nc_ohc=09xiXFUb4igQ7kNvgFka-6b&_nc_ht=scontent.fcrk1-1.fna&oh=00_AYDeeclfISMWJWs4w1K2_KTeRiUDGiQMe1Qzo6lNUgqXKg&oe=669EA115" class="absolute block w-full h-full object-cover" alt="...">
+              <div class="carousel-text">
+                  <h1 class="text-4xl font-bold"></h1>
+                  <p class="mt-2"></p>
+              </div>
           </div>
           <!-- Item 4 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-6/309109961_466492918844551_5608857951586581210_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeGM2sxZ_hDB8YdKyHP287fiO3RrItf8iF47dGsi1_yIXve6rTBSRn1h8Yd2ynCAj6s-q-jdWfTNIhhPQoKf9wAw&_nc_ohc=nb8JDOvUmTQQ7kNvgEiMg86&_nc_ht=scontent.fmnl4-7.fna&oh=00_AYDmyppbptRHaDh-sfs4DsJTYHTTowyMUV87KuFSHH4APQ&oe=66954574"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <div class="hidden duration-700 ease-in-out carousel-item" data-carousel-item>
+              <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/434043416_808319061328600_58727013317992203_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE1QHytULkCDcgfubCeuY8xHIRqXE3SP10chGpcTdI_XTdIwy4-AwkSHvcBwBJkKCJrc857xFxamLjuVRrNgcu6&_nc_ohc=yonZYcPZhx4Q7kNvgEETJ_L&_nc_ht=scontent.fcrk1-3.fna&oh=00_AYD_-o2-_BtnSWtykly8etZO2NReS05t9WI_BMniM0SO3w&oe=669E693B" class="absolute block w-full h-full object-cover" alt="...">
+              <div class="carousel-text">
+                  <h1 class="text-4xl font-bold"></h1>
+                  <p class="mt-2"></p>
+              </div>
           </div>
           <!-- Item 5 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t39.30808-6/362920615_668484695312038_7090780689769762971_n.png?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeFN7gqtJoqu9qkktbPShNY9V3uBnBdKh5JXe4GcF0qHkiRU97ImsUhDgQtOwW6T1lZquq01XcMlJZhs4E7a1xXn&_nc_ohc=bz9iJrEGiQUQ7kNvgFpPWxF&_nc_ht=scontent.fmnl4-3.fna&oh=00_AYCy4vphrN2No5cGA7GdKSO0yEoPhMgaSrUEn_NFjrz36g&oe=669547FE"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <div class="hidden duration-700 ease-in-out carousel-item" data-carousel-item>
+              <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/441286528_839483401545499_5460269429252091425_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHJ2zf4Jj_c26GgZhQetVZ8jedxABcKM2aN53EAFwozZvvAAlNndW6ILYq1sDyF4-iYNROGfMln2vMe28iIW9xI&_nc_ohc=09xiXFUb4igQ7kNvgFka-6b&_nc_ht=scontent.fcrk1-1.fna&oh=00_AYDeeclfISMWJWs4w1K2_KTeRiUDGiQMe1Qzo6lNUgqXKg&oe=669EA115" class="absolute block w-full h-full object-cover" alt="...">
+              <div class="carousel-text">
+                  <h1 class="text-4xl font-bold"></h1>
+                  <p class="mt-2"></p>
+              </div>
           </div>
-        </div>
-        <!-- Slider indicators -->
-        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-            data-carousel-slide-to="0"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-            data-carousel-slide-to="1"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-            data-carousel-slide-to="2"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
-            data-carousel-slide-to="3"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
-            data-carousel-slide-to="4"></button>
-        </div>
-        <!-- Slider controls -->
-        <button type="button"
-          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev>
-          <span
-            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M5 1 1 5l4 4" />
-            </svg>
-            <span class="sr-only">Previous</span>
-          </span>
-        </button>
-        <button type="button"
-          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next>
-          <span
-            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="m1 9 4-4-4-4" />
-            </svg>
-            <span class="sr-only">Next</span>
-          </span>
-        </button>
       </div>
-    </section>
-    <!-- hero secti-->
-    
-
-
-
-<!--articles-->
-
-
-
-  <!-- Articles Section -->
-  <section id="articles" class="container mx-auto py-12 px-4">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Article 1 -->
-        <div class="article rounded-lg shadow-md overflow-hidden">
-            <img src="image/a.png" alt="Article 1" class="w-full h-56 object-cover">
-            <div class="p-6">
-                <h3 class="text-xl font-semibold mb-2 article-title">Article Title Here</h3>
-                <p class="text-gray-700 article-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quam cumque nam ipsam? Esse quaerat optio repudiandae, at, adipisci commodi nesciunt nobis laboriosam nihil quam illo veritatis enim magni distinctio!</p>
-                <a href="article1.html" class="read-more-btn mt-4 block text-center text-violet-500 hover:text-yellow-600">Read more</a>
-            </div>
-        </div>
-
-        <!-- Article 2 -->
-        <div class="article  rounded-lg shadow-md overflow-hidden">
-            <img src="image/a.png" alt="Article 2" class="w-full h-56 object-cover">
-            <div class="p-6">
-                <h3 class="text-xl font-semibold mb-2 article-title">Another Article Title</h3>
-                <p class="text-gray-700 article-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quam cumque nam ipsam? Esse quaerat optio repudiandae, at, adipisci commodi nesciunt nobis laboriosam nihil quam illo veritatis enim magni distinctio!</p>
-                <a href="article1.html" class="read-more-btn mt-4 block text-center text-violet-500 hover:text-yellow-600">Read more</a>
-            </div>
-        </div>
-
-        <!-- Article 3 -->
-        <div class="article  rounded-lg shadow-md overflow-hidden">
-            <img src="image/a.png" alt="Article 3" class="w-full h-56 object-cover">
-            <div class="p-6">
-                <h3 class="text-xl font-semibold mb-2 article-title">Third Article Title</h3>
-                <p class="text-gray-700 article-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quam cumque nam ipsam? Esse quaerat optio repudiandae, at, adipisci commodi nesciunt nobis laboriosam nihil quam illo veritatis enim magni distinctio!</p>
-                <a href="#" class="read-more-btn mt-4 block text-center text-violet-500 hover:text-yellow-600">Read more</a>
-            </div>
-        </div>
-
-        <!-- Article 4 -->
-        <div class="article  rounded-lg shadow-md overflow-hidden">
-            <img src="image/a.png" alt="Article 4" class="w-full h-56 object-cover">
-            <div class="p-6">
-                <h3 class="text-xl font-semibold mb-2 article-title">Fourth Article Title</h3>
-                <p class="text-gray-700 article-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quam cumque nam ipsam? Esse quaerat optio repudiandae, at, adipisci commodi nesciunt nobis laboriosam nihil quam illo veritatis enim magni distinctio!</p>
-                <a href="article1.html" class="read-more-btn mt-4 block text-center text-violet-500 hover:text-yellow-600">Read more</a>
-            </div>
-        </div>
-    </div>
+      <!-- Slider indicators -->
+      <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+      </div>
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+              </svg>
+              <span class="sr-only">Previous</span>
+          </span>
+      </button>
+      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+              </svg>
+              <span class="sr-only">Next</span>
+          </span>
+      </button>
+  </div>
 </section>
-
-
-
-
-
-<div class="container mx-auto px-4 py-8">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-  <article class="shadow rounded overflow-hidden">
-    <img src="image/a.png" alt="..." class="w-full h-48 object-cover">
-    <div class="p-4">
-      <h3 class="text-lg font-medium mb-2">Breaking News</h3>
-      <div class="text-gray-500 mb-4">July 8, 2024</div>
-      <p class="text-sm">BY MARY HIGHTOWER Lack of personnel and sketchy maps are among the stumbling blocks as the Environmental Protection Agency works pesticide approvals through...</p>
-      <a href="article1.html" class="read-more-btn mt-4 block text-center text-violet-500 hover:text-yellow-600">Read more</a>
+<br>
+<!--navs pindutan-->
+<section id="" class="">
+  <nav class="">
+    <div class="max-w-screen-xl mx-auto p-4 flex flex-wrap items-center justify-between">
+      <a href="#" class="flex items-center space-x-3">
+        <img src="image/a.png" class="h-8" alt="Logo">
+        <span class="self-center text-2xl font-semibold text-black border-b-2 border-violet-500">THE MIRROR</span>
+      </a>
+      <div class="flex md:order-2 space-x-3">
+        <!-- Placeholder for future content or buttons -->
+      </div>
+      <div class="hidden md:flex items-center justify-between w-full md:w-auto md:order-1 ml-auto" id="navbar-sticky">
+        <ul class="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 p-4 md:p-0 font-medium">
+          <li>
+            <a href="index.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">HOME</a>
+          </li>
+          <li>
+            <a href="articles.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ARTICLES</a>
+          </li>
+          <li>
+            <a href="announcement.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ANNOUNCEMENT</a>
+          </li>
+          <li>
+            <a href="achivements.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ACHIEVEMENTS</a>
+          </li>
+          <li>
+            <a href="aboutpage.html" class="block py-2 px-3 text-black border-b-2 border-transparent hover:border-violet-500 focus:border-violet-500">ABOUT PAGE</a>
+          </li>
+        </ul> 
+      </div>
     </div>
-  </article>
-  <article class="shadow rounded overflow-hidden">
-    <img src="image/a.png" alt="..." class="w-full h-48 object-cover">
-    <div class="p-4">
-      <h3 class="text-lg font-medium mb-2">Breaking News</h3>
-      <div class="text-gray-500 mb-4">July 8, 2024</div>
-      <p class="text-sm">BY MARY HIGHTOWER Lack of personnel and sketchy maps are among the stumbling blocks as the Environmental Protection Agency works pesticide approvals through...</p>
-      <a href="article1.html" class="read-more-btn mt-4 block text-center text-violet-500 hover:text-yellow-600">Read more</a>
-    </div>
-  </article>
-  <article class="shadow rounded overflow-hidden">
-    <img src="image/a.png" alt="..." class="w-full h-48 object-cover">
-    <div class="p-4">
-      <h3 class="text-lg font-medium mb-2">Breaking News</h3>
-      <div class="text-gray-500 mb-4">July 8, 2024</div>
-      <p class="text-sm">BY MARY HIGHTOWER Lack of personnel and sketchy maps are among the stumbling blocks as the Environmental Protection Agency works pesticide approvals through...</p>
-      <a href="article1.html" class="read-more-btn mt-4 block text-center text-violet-500 hover:text-yellow-600">Read more</a>
-    </div>
-  </article>
-  <article class="shadow rounded overflow-hidden">
-    <img src="image/a.png" alt="..." class="w-full h-48 object-cover">
-    <div class="p-4">
-      <h3 class="text-lg font-medium mb-2">Breaking News</h3>
-      <div class="text-gray-500 mb-4">July 8, 2024</div>
-      <p class="text-sm">BY MARY HIGHTOWER Lack of personnel and sketchy maps are among the stumbling blocks as the Environmental Protection Agency works pesticide approvals through...</p>
-      <a href="article1.html" class="read-more-btn mt-4 block text-center text-violet-500 hover:text-yellow-600">Read more</a>
-    </div>
-  </article>
+  </nav>
+</section>
+  <!-- Articles Section -->
+  <section class=" p-6">
+      <div class="mt-4 text-center">
+          <h1 class="text-3xl font-bold">ARTICLES</h1>
+          <p class="text-gray-600 mt-2 font-semibold">This is a brief description of the main news. It provides a quick summary to grab the reader's attention.</p>
+      </div>
+      <br>
+      <br>
+      <div class="max-w-8xl mx-auto">
+          <div class="flex flex-wrap -mx-4">
+              <!-- Main Picture with Text -->
+              <div class="w-full lg:w-1/2 px-4 mb-6 lg:mb-0">
+                  <a href="article2.html">
+                      <img src="image/a.png" alt="Main News" class="w-full h-96 object-cover  shadow-md">
+                  </a>
+                  <div class="mt-4 text-center">
+                      <br>
+                      <h2 class="text-2xl font-bold mb-4">Main Article Title</h2>
+                      <p class="text-gray-600 mt-2 font-medium ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laborum provident molestias molestiae quae officiis qui praesentium mollitia suscipit, inventore magni optio incidunt voluptatum eveniet cumque, voluptatibus, amet eligendi rerum!</p>
+                      <p class="text-gray-600 mt-2 font-semibold">July 23, 2024</p>
+                  </div>
+              </div>
+              <!-- Grid of 4 Pictures with Text -->
+              <div class="w-full lg:w-1/2 px-4 flex flex-col space-y-6">
+                  <!-- Article 1 -->
+                  <div class="flex space-x-4">
+                      <a href="article1.html" class="w-1/4">
+                          <img src="image/a.png" alt="News 1" class="w-full h-32 object-cover  shadow-md">
+                      </a>
+                      <div class="w-3/4">
+                          <h2 class="text-xl font-semibold">Article Title 1</h2>
+                          <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laborum provident molestias molestiae quae officiis.</p>
+                          <p class="text-gray-600 mt-2 font-semibold">July 23, 2024</p>
+                      </div>
+                  </div>
+                  <!-- Article 2 -->
+                  <div class="flex space-x-4">
+                      <a href="article2.html" class="w-1/4">
+                          <img src="image/a.png" alt="News 2" class="w-full h-32 object-cover shadow-md">
+                      </a>
+                      <div class="w-3/4">
+                          <h2 class="text-xl font-semibold">Article Title 2</h2>
+                          <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laborum provident molestias molestiae quae officiis.</p>
+                          <p class="text-gray-600 mt-2 font-semibold">July 23, 2024</p>
+                      </div>
+                  </div>
+                  <!-- Article 3 -->
+                  <div class="flex space-x-4">
+                      <a href="article2.html" class="w-1/4">
+                          <img src="image/a.png" alt="News 3" class="w-full h-32 object-cover  shadow-md">
+                      </a>
+                      <div class="w-3/4">
+                          <h2 class="text-xl font-semibold">Article Title 3</h2>
+                          <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laborum provident molestias molestiae quae officiis.</p>
+                          <p class="text-gray-600 mt-2 font-semibold">July 23, 2024</p>
+                      </div>
+                  </div>
+                  <!-- Article 4 -->
+                  <div class="flex space-x-4">
+                      <a href="article1.html" class="w-1/4">
+                          <img src="image/a.png" alt="News 4" class="w-full h-32 object-cover  shadow-md">
+                      </a>
+                      <div class="w-3/4">
+                          <h2 class="text-xl font-semibold">Article Title 4</h2>
+                          <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laborum provident molestias molestiae quae officiis.</p>
+                          <p class="text-gray-600 mt-2 font-semibold">July 23, 2024</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+<!---Achivements-->
+<section id="achievments" class="p-6">
+  <div class="max-w-7xl mx-auto">
+     <!-- Main Achievement with Text and Picture -->
+      <div class="flex flex-wrap items-center mb-8">
+          <div class="w-full lg:w-1/2 px-4 mb-6">
+              <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/434831202_817786707048502_6033755304355467245_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHSoRPno7c_oL2YZuZA9k74tTGPz9OwIl61MY_P07AiXiRDMkGUdr3z_KkEHpEHFUC8OHGgxnwECDMLIptmzerz&_nc_ohc=sEKAFrtd76UQ7kNvgElBAyj&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYBvy2UjZTUCuSaSV_QwRaknQHb8zltp-SqDQpwtdQ1tLw&oe=669E7999" alt="Main Achievement" class="w-full h-auto ">
+          </div>
+          <div class="w-full lg:w-1/2 px-4 mb-6 lg:mb-0">
+              <h2 class="text-2xl font-bold mb-4">Main Achievement Title</h2>
+              <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatum sit, earum fugit perspiciatis quam tenetur dignissimos dolorum minima corrupti. Quas quam voluptatum eos cumque at veritatis, optio modi nihil!
+              Minima blanditiis praesentium illo saepe tempora atque obcaecati aut, at cupiditate maiores optio aliquid in enim nesciunt perferendis quidem expedita? Ab quia iste quasi nemo et facilis veniam nulla officia.
+              Non perspiciatis qui ut sequi natus libero earum numquam necessitatibus atque quidem ipsa totam ducimus dignissimos quos magni modi iusto explicabo asperiores voluptatem, dolorum velit pariatur. Unde quo labore voluptatem.
+              Explicabo doloribus provident maxime laborum debitis ratione quos totam earum nesciunt, odit eos? Excepturi eum similique maxime laudantium quibusdam. Ipsam eos cupiditate optio eligendi dolor sapiente quas architecto vero fugit?
+              Eligendi commodi culpa tenetur neque iste rerum, quis ea eveniet a et consequuntur quae recusandae veniam nesciunt mollitia nihil doloribus dolores quaerat ipsam ut! Necessitatibus nostrum cumque quia repellendus corrupti.
+              Amet deserunt consequatur totam, officiis dolorum voluptatibus pariatur facere quod quis ab expedita laborum incidunt enim eius vitae consequuntur voluptatem fugit? Minima mollitia dolorem iure accusamus quas asperiores corrupti tempora.
+              Neque rem nesciunt quos pariatur dolor incidunt mollitia necessitatibus, cumque facere adipisci maiores aperiam excepturi soluta voluptates tenetur. Eaque tempora magni deserunt ullam saepe officiis neque temporibus at aliquam ad.</p>
+              <p class="text-gray-600 mt-2">July 23, 2024</p>
+          </div>
+      </div>
+      <!-- Four Additional Achievements with Pictures -->
+      <section class="w-full mt-8">
+        <div class="carousel w-full max-w-7xl mx-auto   overflow-hidden">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <div class="w-full px-2 mb-4">
+                <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/434703080_817088323785007_388690418068746462_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGY5EVlG2m6VIWAmbNqpLzD8EkqFOCMvJHwSSoU4Iy8kQ58TJh7jlcPMyKCT2w4MQEFw8MSrWXPqRsurLzq6Eje&_nc_ohc=_IPS6H3wV5oQ7kNvgF2lMyi&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYD__fO8zsnc00Y9fI1v0FpD5tM6jjI2XKGn4nHYgPwpfQ&oe=669AF32A" alt="Image 1" class="rounded-lg w-full">
+              </div>
+              <div class="w-full px-2 mb-4">
+                <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/434202111_817081477119025_8010824712087334958_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFOluHxqkaee7XRvvZcq7mqWecx9TnPk6JZ5zH1Oc-TosnRwZixwclsw-hL_I7VCnePQQfLy_gW38FpqgamZIci&_nc_ohc=B7x1Wm3iE7kQ7kNvgHOsbo4&_nc_ht=scontent.fcrk1-1.fna&oh=00_AYAxizGfGxJjSHqdLLPJl8HVMEjyl39pGjR4RDQ9SbcplQ&oe=669AE85A" alt="Image 2" class="rounded-lg w-full">
+              </div>
+              <div class="w-full px-2 mb-4">
+                <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/435703175_817081497119023_1503442731914044424_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEst1HyY0DEsIjJPF1ySOMR8Po_vYkKD-rw-j-9iQoP6gnOgu5raSVnKJbXVrtj5YlN5BjwqBpvTu5FVEhIUd1i&_nc_ohc=_ma3GQbq3SQQ7kNvgG2bu5G&_nc_ht=scontent.fcrk1-3.fna&oh=00_AYCQm-UXvBLx8-QmbUVph83vK3t1dsEF6ZE2MJan_5fy-A&oe=669AED96" alt="Image 3" class="rounded-lg w-full">
+              </div>
+              <div class="w-full px-2 mb-4">
+                <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/434703080_817088323785007_388690418068746462_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGY5EVlG2m6VIWAmbNqpLzD8EkqFOCMvJHwSSoU4Iy8kQ58TJh7jlcPMyKCT2w4MQEFw8MSrWXPqRsurLzq6Eje&_nc_ohc=_IPS6H3wV5oQ7kNvgF2lMyi&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYD__fO8zsnc00Y9fI1v0FpD5tM6jjI2XKGn4nHYgPwpfQ&oe=669AF32A" alt="Image 4" class="rounded-lg w-full">
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <div class="w-full px-2 mb-4">
+                <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/434703080_817088323785007_388690418068746462_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGY5EVlG2m6VIWAmbNqpLzD8EkqFOCMvJHwSSoU4Iy8kQ58TJh7jlcPMyKCT2w4MQEFw8MSrWXPqRsurLzq6Eje&_nc_ohc=_IPS6H3wV5oQ7kNvgF2lMyi&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYD__fO8zsnc00Y9fI1v0FpD5tM6jjI2XKGn4nHYgPwpfQ&oe=669AF32A" alt="Image 5" class="rounded-lg w-full">
+              </div>
+              <div class="w-full px-2 mb-4">
+                <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/434202111_817081477119025_8010824712087334958_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFOluHxqkaee7XRvvZcq7mqWecx9TnPk6JZ5zH1Oc-TosnRwZixwclsw-hL_I7VCnePQQfLy_gW38FpqgamZIci&_nc_ohc=B7x1Wm3iE7kQ7kNvgHOsbo4&_nc_ht=scontent.fcrk1-1.fna&oh=00_AYAxizGfGxJjSHqdLLPJl8HVMEjyl39pGjR4RDQ9SbcplQ&oe=669AE85A" alt="Image 6" class="rounded-lg w-full">
+              </div>
+              <div class="w-full px-2 mb-4">
+                <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/435703175_817081497119023_1503442731914044424_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEst1HyY0DEsIjJPF1ySOMR8Po_vYkKD-rw-j-9iQoP6gnOgu5raSVnKJbXVrtj5YlN5BjwqBpvTu5FVEhIUd1i&_nc_ohc=_ma3GQbq3SQQ7kNvgG2bu5G&_nc_ht=scontent.fcrk1-3.fna&oh=00_AYCQm-UXvBLx8-QmbUVph83vK3t1dsEF6ZE2MJan_5fy-A&oe=669AED96" alt="Image 7" class="rounded-lg w-full">
+              </div>
+              <div class="w-full px-2 mb-4">
+                <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/434831202_817786707048502_6033755304355467245_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHSoRPno7c_oL2YZuZA9k74tTGPz9OwIl61MY_P07AiXiRDMkGUdr3z_KkEHpEHFUC8OHGgxnwECDMLIptmzerz&_nc_ohc=OECPezRwFSkQ7kNvgEBibY0&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYC60-9JOikvDmh8TZjq7HhMa-71F7qr7eBcWpohkQSmTQ&oe=669ABD59" alt="Image 8" class="rounded-lg w-full">
+              </div>
+            </div>
+          </div>
+          <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition">‹</button>
+          <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition">›</button>
+        </div>
+      </section>
+  </div>
+</section>
+<!--Pinatawag ko kayong lahat!-->
+<div class="container relative flex flex-col justify-between h-full max-w-7xl px-10 mx-auto xl:px-0 mt-5">
+  <div class="w-full">
+      <div class="flex flex-col w-full mb-10 sm:flex-row">
+          <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+              <div class="relative h-full ml-0 mr-0 sm:mr-10">
+                  <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg"></span>
+                  <div class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg">
+                      <div class="flex items-center -mt-1">
+                          <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">ANNOUNCEMENT!</h3>
+                      </div>
+                      <p class="mt-3 mb-1 text-xs font-medium text-indigo-500 uppercase">------------</p>
+                      <p class="mb-2 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae magnam ut hic sed, nisi eum dolorum aut magni amet excepturi rem necessitatibus rerum tempore harum adipisci incidunt eveniet non.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="w-full sm:w-1/2">
+              <div class="relative h-full ml-0 md:mr-10">
+                  <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-purple-500 rounded-lg"></span>
+                  <div class="relative h-full p-5 bg-white border-2 border-purple-500 rounded-lg">
+                      <div class="flex items-center -mt-1">
+                          <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">ANNOUNCEMENT!</h3>
+                      </div>
+                      <p class="mt-3 mb-1 text-xs font-medium text-purple-500 uppercase">------------</p>
+                      <p class="mb-2 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae magnam ut hic sed, nisi eum dolorum aut magni amet excepturi rem necessitatibus rerum tempore harum adipisci incidunt eveniet non.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="flex flex-col w-full mb-5 sm:flex-row">
+          <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+              <div class="relative h-full ml-0 mr-0 sm:mr-10">
+                  <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-blue-400 rounded-lg"></span>
+                  <div class="relative h-full p-5 bg-white border-2 border-blue-400 rounded-lg">
+                      <div class="flex items-center -mt-1">
+                          <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">ANNOUNCEMENT!</h3>
+                      </div>
+                      <p class="mt-3 mb-1 text-xs font-medium text-blue-400 uppercase">------------</p>
+                      <p class="mb-2 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae magnam ut hic sed, nisi eum dolorum aut magni amet excepturi rem necessitatibus rerum tempore harum adipisci incidunt eveniet non.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+              <div class="relative h-full ml-0 mr-0 sm:mr-10">
+                  <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-yellow-400 rounded-lg"></span>
+                  <div class="relative h-full p-5 bg-white border-2 border-yellow-400 rounded-lg">
+                      <div class="flex items-center -mt-1">
+                          <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">ANNOUNCEMENT!</h3>
+                      </div>
+                      <p class="mt-3 mb-1 text-xs font-medium text-yellow-400 uppercase">------------</p>
+                      <p class="mb-2 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae magnam ut hic sed, nisi eum dolorum aut magni amet excepturi rem necessitatibus rerum tempore harum adipisci incidunt eveniet non.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="w-full sm:w-1/2">
+              <div class="relative h-full ml-0 md:mr-10">
+                  <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-green-500 rounded-lg"></span>
+                  <div class="relative h-full p-5 bg-white border-2 border-green-500 rounded-lg">
+                      <div class="flex items-center -mt-1">
+                          <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">ANNOUNCEMENT!</h3>
+                      </div>
+                      <p class="mt-3 mb-1 text-xs font-medium text-green-500 uppercase">------------</p>
+                      <p class="mb-2 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae magnam ut hic sed, nisi eum dolorum aut magni amet excepturi rem necessitatibus rerum tempore harum adipisci incidunt eveniet non.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
 </div>
-
-<!--announcement -->
-<section id="achievements" class="py-12">
-  <div class="max-w-screen-xl mx-auto px-4">
-      <div class="flex flex-wrap items-start">
-          <div class="w-full lg:w-1/2 lg:pr-8">
-              <h2 class="text-center text-3xl font-bold mb-4">ACHIEVEMENTS</h2>
-              <p class="text-center text-gray-700 leading-relaxed">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatem ducimus totam architecto vel incidunt porro odit, commodi minima? Repellat et, hic eligendi mollitia non deleniti necessitatibus fugiat cumque a. Recusandae aperiam nesciunt earum sequi odio nulla commodi repellendus, enim sapiente, quidem porro! Veritatis possimus ipsum, natus perspiciatis quam aliquam, obcaecati ipsam esse suscipit temporibus similique blanditiis aperiam atque. Itaque. Doloribus ullam debitis ea eligendi! Nisi nemo blanditiis, culpa perspiciatis quibusdam sit amet, accusamus totam esse eligendi obcaecati enim dicta quo provident nulla reprehenderit nesciunt debitis assumenda at cupiditate! Voluptatum.
-              </p>
-          </div>
-          <div class="w-full lg:w-1/2 mt-8 lg:mt-0">
-              <div class="aspect-w-16 aspect-h-9">
-                <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100064058944301%2Fvideos%2F3851809058385296%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-              </div>
-          </div>
-          <section class="w-full mt-8">
-            <div class="carousel w-full max-w-7xl mx-auto shadow-lg rounded-lg overflow-hidden">
-              <div class="carousel-inner">
-                <!-- Slide 1 -->
-                <div class="carousel-item grid grid-cols-2 sm:grid-cols-4 gap-4">
-                  <div class="w-full px-2 mb-4">
-                    <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/428613377_373913148723378_7690334558789896733_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGBNtTm2QRca7v_19_g2JShr8kT_SPywFavyRP9I_LAVh46KWLhFWbZI2fPdSv-zF2SknVFPioNdcnEsAbanItd&_nc_ohc=wQyokdeGJm8Q7kNvgEqpAld&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYBa8pKZMWPAKHcio3BUtlV5k06KFrAho0BLvU_rb8EMQw&oe=669AD3DB" alt="Image 1" class="rounded-lg w-full">
-                  </div>
-                  <div class="w-full px-2 mb-4">
-                    <img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/428606528_373914028723290_1342487845501663196_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFE04b0PnBJ-ZgIKoqBZc0u9wPBbCjVrtH3A8FsKNWu0YBXJPiyYUbNc0pMi9M8hYGPd0CQmmVN834C3XjePInO&_nc_ohc=1A3u-_7l038Q7kNvgGA8rF1&_nc_ht=scontent.fcrk1-4.fna&oh=00_AYDO7Oc4z0UJqbLKJI6ijE-yuWjC4PgH3BBaE1vvDyiDzQ&oe=669AE634" alt="Image 2" class="rounded-lg w-full">
-                  </div>
-                  <div class="w-full px-2 mb-4">
-                    <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/428606691_373911978723495_3392406520552306846_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHsMvW77i5wafReLYe7EsuAJfPzBrAeIuMl8_MGsB4i42tbMhAEkaSy8vdenIwO-0RFwNzjsIyqHEYCL1Gm7ooK&_nc_ohc=kzG27m_UOtYQ7kNvgEOUjFp&_nc_ht=scontent.fcrk1-1.fna&oh=00_AYBAEGidjX5SrKZ1zy8iWS85XAsLsED0WhcdCh5i2KuwqA&oe=669AF191" alt="Image 3" class="rounded-lg w-full">
-                  </div>
-                  <div class="w-full px-2 mb-4">
-                    <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/428613377_373913148723378_7690334558789896733_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGBNtTm2QRca7v_19_g2JShr8kT_SPywFavyRP9I_LAVh46KWLhFWbZI2fPdSv-zF2SknVFPioNdcnEsAbanItd&_nc_ohc=wQyokdeGJm8Q7kNvgEqpAld&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYBa8pKZMWPAKHcio3BUtlV5k06KFrAho0BLvU_rb8EMQw&oe=669AD3DB" alt="Image 4" class="rounded-lg w-full">
-                  </div>
-               
-
-  
-                
-                </div>
-                <!-- Slide 2 -->
-                <div class="carousel-item grid grid-cols-2 sm:grid-cols-4 gap-4">
-                  <div class="w-full px-2 mb-4">
-                    <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/434703080_817088323785007_388690418068746462_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGY5EVlG2m6VIWAmbNqpLzD8EkqFOCMvJHwSSoU4Iy8kQ58TJh7jlcPMyKCT2w4MQEFw8MSrWXPqRsurLzq6Eje&_nc_ohc=_IPS6H3wV5oQ7kNvgF2lMyi&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYD__fO8zsnc00Y9fI1v0FpD5tM6jjI2XKGn4nHYgPwpfQ&oe=669AF32A" alt="Image 5" class="rounded-lg w-full">
-                  </div>
-                  <div class="w-full px-2 mb-4">
-                    <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/434202111_817081477119025_8010824712087334958_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFOluHxqkaee7XRvvZcq7mqWecx9TnPk6JZ5zH1Oc-TosnRwZixwclsw-hL_I7VCnePQQfLy_gW38FpqgamZIci&_nc_ohc=B7x1Wm3iE7kQ7kNvgHOsbo4&_nc_ht=scontent.fcrk1-1.fna&oh=00_AYAxizGfGxJjSHqdLLPJl8HVMEjyl39pGjR4RDQ9SbcplQ&oe=669AE85A" alt="Image 6" class="rounded-lg w-full">
-                  </div>
-                  <div class="w-full px-2 mb-4">
-                    <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/435703175_817081497119023_1503442731914044424_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEst1HyY0DEsIjJPF1ySOMR8Po_vYkKD-rw-j-9iQoP6gnOgu5raSVnKJbXVrtj5YlN5BjwqBpvTu5FVEhIUd1i&_nc_ohc=_ma3GQbq3SQQ7kNvgG2bu5G&_nc_ht=scontent.fcrk1-3.fna&oh=00_AYCQm-UXvBLx8-QmbUVph83vK3t1dsEF6ZE2MJan_5fy-A&oe=669AED96" alt="Image 7" class="rounded-lg w-full">
-                  </div>
-                  <div class="w-full px-2 mb-4">
-                    <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/434831202_817786707048502_6033755304355467245_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHSoRPno7c_oL2YZuZA9k74tTGPz9OwIl61MY_P07AiXiRDMkGUdr3z_KkEHpEHFUC8OHGgxnwECDMLIptmzerz&_nc_ohc=OECPezRwFSkQ7kNvgEBibY0&_nc_ht=scontent.fcrk1-5.fna&oh=00_AYC60-9JOikvDmh8TZjq7HhMa-71F7qr7eBcWpohkQSmTQ&oe=669ABD59" alt="Image 8" class="rounded-lg w-full">
-                  </div>
-                </div>
-              </div>
-              <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition">‹</button>
-              <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition">›</button>
-            </div>
-          </section>
-      </div>
-  </div>
-</section>
-
-      
-
-
-
-<section id="announcement" class=" py-12">
-  <div class="max-w-7xl mx-auto  shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
+<section class=" py-12">
+  <div class="max-w-7xl mx-auto   overflow-hidden flex flex-col md:flex-row">
     <div class="md:w-1/2">
-      <img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/422716600_792537549573418_3481071234934737219_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGhJexZsALoeOunv1NX4-e8j3EYxy19odGPcRjHLX2h0Zz2IK0sPyUqQYz86c1mTeBj-o6OBa0KS2wFeEQmvpaz&_nc_ohc=pnksTFO5F7oQ7kNvgFGNuGB&_nc_ht=scontent.fcrk1-4.fna&oh=00_AYCaam91S8VU2J6BeD7KwOGGw-yvQmqjoamsrFiPb5pBrg&oe=669AE1D3" alt="Announcement Image" class="w-full h-full object-cover rounded-lg">
+      <img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/422716600_792537549573418_3481071234934737219_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGhJexZsALoeOunv1NX4-e8j3EYxy19odGPcRjHLX2h0Zz2IK0sPyUqQYz86c1mTeBj-o6OBa0KS2wFeEQmvpaz&_nc_ohc=pnksTFO5F7oQ7kNvgFGNuGB&_nc_ht=scontent.fcrk1-4.fna&oh=00_AYCaam91S8VU2J6BeD7KwOGGw-yvQmqjoamsrFiPb5pBrg&oe=669AE1D3" alt="Announcement Image" class=" ">
     </div>
     <div class="md:w-1/2 p-6 md:p-12">
       <h2 class="text-3xl font-bold text-gray-800 mb-4">ANNOUNCEMENT!</h2>
       <p class="text-lg text-gray-600 mb-6">We are thrilled to announce the launch of our new product. It comes with a lot of exciting features and improvements that we believe you will love. Stay tuned for more updates and make sure to check it out!</p>
-      <a href="#" class="bg-yellow-500 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-yellow-600 transition duration-300">Learn More</a>
+      <a href="#" class="bg-yellow-500 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-yellow-600 transition duration-300">Read More</a>
       <div class="pt-10">
         <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fgnc.edu.ph%2Fvideos%2F307831338573025%2F&show_text=false&width=560&t=0" width="500" height="314" class="border-none overflow-hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
       </div>
     </div>
   </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-<!--Footer-->
+<!---Paa ng website HAHAHA-->
 <section id="footer">
 <footer class=" dark:bg-gray-900">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -479,8 +509,16 @@
   });
 </script>
 
+<script>
+let currentDate = new Date();
 
+// Format the date
+let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+let formattedDate = currentDate.toLocaleDateString('en-US', options);
 
+// Display the date on the page
+document.getElementById('currentDate').textContent = formattedDate;
+</script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
 
